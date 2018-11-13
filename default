@@ -36,17 +36,17 @@
 ##########################################################################################################
 # 延迟数据
 #--------------------------------------------------------------------------------------------------------#
-# 与各种获取食物相关的行为的延迟时间
+# 与各种获取食物相关的行为的延迟时间配置
 ##########################################################################################################
 
 delays {
-    # Multiplier applied to the delay between breeding entities [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # 实体进行繁殖的延迟时间倍数 [一般值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
     I:breedingTimeoutMultiplier=1
 
-    # Multiplier on the time it takes cactus to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # 仙人掌生长所需的时间倍数 [一般值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
     I:cactusRegrowthMultiplier=1
 
-    # Multiplier applied to the delay before children become adults [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # 小孩成长成为承认所需的时间倍数 [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
     I:childDurationMultiplier=1
 
     # Multiplier on the time it takes cocoa to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
