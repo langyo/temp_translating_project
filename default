@@ -40,28 +40,28 @@
 ##########################################################################################################
 
 delays {
-    # 实体进行繁殖的延迟时间倍数 [一般值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    # 实体进行繁殖的周期时间倍数 [一般值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
     I:breedingTimeoutMultiplier=1
 
-    # 仙人掌生长所需的时间倍数 [一般值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    # 仙人掌生长周期时间倍数 [一般值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
     I:cactusRegrowthMultiplier=1
 
-    # 小孩成长成为承认所需的时间倍数 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
+    # 小孩成年的周期时间倍数 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
     I:childDurationMultiplier=1
 
-    # 可可豆生长所需的时间倍数 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
+    # 可可豆生长周期时间倍数 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
     I:cocoaRegrowthMultiplier=1
 
-    # Multiplier on the time it takes a non-tree crop to grow [一般值: 1] [range: 0 ~ 2147483647, default: 4]
+    # 非木本的植物生长的周期时间倍数 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
     I:cropRegrowthMultiplier=1
 
-    # Multiplier on the time it takes food to dry on Tinkers' Construct drying racks [一般值: 1] [range: 0 ~ 2147483647, default: 4]
+    # 将食物放在匠魂模组（Tinkers' Construct）中晾干架上晾干所需的周期时间倍数 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
     I:dryingRackTimeMultiplier=1
 
-    # Multiplier applied to the delay between chicken egg laying [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # 鸡产蛋的周期时间倍数延迟 [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
     I:eggTimeoutMultiplier=1
 
-    # Multiplier on the time it takes a WeeeFlower crop to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 1]
+    # 在更多花朵模组 (WeeeFlower) 中植物的生长周期时间倍数 [vanilla: 1] [range: 0 ~ 2147483647, default: 1]
     I:flowerRegrowthMultiplier=1
 
     # Delay (in minutes) after milking a cow before it can be milked again [vanilla: 0] [range: 0 ~ 2147483647, default: 20]
