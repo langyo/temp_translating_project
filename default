@@ -58,13 +58,13 @@ delays {
     # 将食物放在匠魂模组（Tinkers' Construct）中晾干架上晾干所需的周期时间倍数 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
     I:dryingRackTimeMultiplier=1
 
-    # 鸡产蛋的周期时间倍数延迟 [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # 鸡产蛋的周期时间倍数 [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
     I:eggTimeoutMultiplier=1
 
     # 在更多花朵模组 (WeeeFlower) 中植物的生长周期时间倍数 [vanilla: 1] [range: 0 ~ 2147483647, default: 1]
     I:flowerRegrowthMultiplier=1
 
-    # Delay (in minutes) after milking a cow before it can be milked again [vanilla: 0] [range: 0 ~ 2147483647, default: 20]
+    # Delay (in minutes) 牛挤过奶后能再挤奶之前相隔的时间周期（单位为分钟） [vanilla: 0] [range: 0 ~ 2147483647, default: 20]
     I:milkedTimeout=0
 
     # Multiplier on the time it takes nether wart to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
