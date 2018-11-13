@@ -46,16 +46,16 @@ delays {
     # 仙人掌生长所需的时间倍数 [一般值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
     I:cactusRegrowthMultiplier=1
 
-    # 小孩成长成为承认所需的时间倍数 [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # 小孩成长成为承认所需的时间倍数 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
     I:childDurationMultiplier=1
 
-    # Multiplier on the time it takes cocoa to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # 可可豆生长所需的时间倍数 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
     I:cocoaRegrowthMultiplier=1
 
-    # Multiplier on the time it takes a non-tree crop to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # Multiplier on the time it takes a non-tree crop to grow [一般值: 1] [range: 0 ~ 2147483647, default: 4]
     I:cropRegrowthMultiplier=1
 
-    # Multiplier on the time it takes food to dry on Tinkers' Construct drying racks [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # Multiplier on the time it takes food to dry on Tinkers' Construct drying racks [一般值: 1] [range: 0 ~ 2147483647, default: 4]
     I:dryingRackTimeMultiplier=1
 
     # Multiplier applied to the delay between chicken egg laying [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
