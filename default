@@ -1,11 +1,11 @@
-# Configuration file
+# 配置文件
 
 ##########################################################################################################
 #  
 #--------------------------------------------------------------------------------------------------------#
-# This config contains settings that will disable all of the changes that Hunger Overhaul makes.
-# It's intended to serve as a starting point for anyone wanting to only enable a few things and leave everything else untouched.
-# To use, rename this file to HungerOverhaul.cfg (overwriting your current HungerOverhaul.cfg)
+# 这个配置文件包含了所有用于禁用 Hunger Overhaul 所作更改的选项。
+# 这是一个可供给人们更改的起始文件，用于启用一些只想启用的东西，并保持其它设置不变。
+# 如果要使用，需要将文件名改为 HungerOverhaul.cfg (覆盖你之前的 HungerOverhaul.cfg)。
 ##########################################################################################################
 
 " " {
@@ -15,28 +15,28 @@
 ##########################################################################################################
 # custom field
 #--------------------------------------------------------------------------------------------------------#
-# Options for enabling and manipulating a custom field in Villages
+# 在村庄中启用和操作自定义属性的选项
 ##########################################################################################################
 
 "custom field" {
-    # Adds a custom field to villages [vanilla: false] [default: true]
+    # 是否要为村庄添加自定义属性 [一般值: false] [默认值: true]
     B:addCustomVillageField=false
 
-    # Weighted chance for custom field to contain 'normal' crops [vanilla: 0] [range: 0 ~ 2147483647, default: 70]
+    # 农作物中包含 'normal'(普通) 这个自定义属性的概率 [一般值: 0] [范围: 0 ~ 2147483647, 默认值: 70]
     I:fieldNormalWeight=0
 
-    # Weighted chance for custom field to contain reeds [vanilla: 0] [range: 0 ~ 2147483647, default: 10]
+    # 芦苇(?)中包含自定义属性的概率 [一般值: 0] [范围: 0 ~ 2147483647, 默认值: 10]
     I:fieldReedWeight=0
 
-    # Weighted chance for custom field to contain pumpkins/melons [vanilla: 0] [range: 0 ~ 2147483647, default: 10]
+    # 南瓜/甜瓜中包含自定义属性的概率 [一般值: 0] [范围: 0 ~ 2147483647, 默认值: 10]
     I:fieldStemWeight=0
 }
 
 
 ##########################################################################################################
-# delays
+# 延迟数据
 #--------------------------------------------------------------------------------------------------------#
-# Delays for various obtaining food related activities
+# 与各种获取食物相关的行为的延迟时间
 ##########################################################################################################
 
 delays {
