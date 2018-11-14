@@ -247,26 +247,27 @@ harvesting {
 ##########################################################################################################
 # health
 #--------------------------------------------------------------------------------------------------------#
-# Options related to health
+# 与生命值相关的选项
 ##########################################################################################################
 
 health {
-    # Amount of health food restores is the food value divided by this number (foodRegensHealth must be true) [vanilla: 4] [range: 0 ~ 2147483647, default: 4]
+    # 进食时恢复的生命值为食物的恢复的饥饿值除以此项 (需要 foodRegensHealth 为 true) [vanilla: 4] [range: 0 ~ 2147483647, default: 4]
     I:foodHealDivider=4
 
-    # Eating food regenerates health [vanilla: false] [default: false]
+    # 进食恢复生命 [vanilla: false] [default: false]
     B:foodRegensHealth=false
 
-    # Speed up or slow down the rate that health regenerates (0 to disable regen) [vanilla: 100] [range: 0 ~ 2147483647, default: 100]
+    # 加快或减慢生命恢复的速度 (0 to disable regen) [vanilla: 100] [range: 0 ~ 2147483647, default: 100]
+    # 在1.10+ 具体数值并不起作用
     I:healthRegenRatePercentage=100
 
-    # The lower your health the longer it takes to regen, modify the effect here (lower = less effect) (modifyRegenRateOnLowHealth must be true) [vanilla: 5] [range: 0 ~ 2147483647, default: 5]
+    # 你的生命值越低，恢复需要的时间越长, 你可以在这里调整这个效果 (越低影响效果越小) (需要 modifyRegenRateOnLowHealth 为 true) [vanilla: 5] [range: 0 ~ 2147483647, default: 5]
     I:lowHealthRegenRateModifier=5
 
-    # Minimum hunger level before healing starts [vanilla: 18] [range: 0 ~ 2147483647, default: 7]
+    # 要开始恢复生命需要的最低的饥饿值 [vanilla: 18] [range: 0 ~ 2147483647, default: 7]
     I:minHungerToHeal=18
 
-    # The lower your health the longer it takes to regen [vanilla: false] [default: true]
+    # 你的生命值越低，恢复的需要的世界越长 [vanilla: false] [default: true]
     B:modifyRegenRateOnLowHealth=false
 }
 
