@@ -92,28 +92,28 @@ delays {
 
 
 ##########################################################################################################
-# 难度等级
+# 难度调整
 #--------------------------------------------------------------------------------------------------------#
-# Options to scale the difficulty of certain elements based on game difficulty
+# 基于游戏难度的难度调整的设置
 ##########################################################################################################
 
 "difficulty scaling" {
-    # Enable/Disable all difficulty scaling effect in one setting [vanilla: false] [default: true]
+    # 是否开启下列所有难度调整效果 [vanilla: false] [default: true]
     B:difficultyScaling=false
 
-    # Effects of bone meal dependant of difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
+    # 基于游戏难度调整骨粉的效果 (需要 'difficultyScaling' 设置为 true) [vanilla: false] [default: true]
     B:difficultyScalingBoneMeal=false
 
-    # Negative effects on low health/hunger scale by difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
+    # 根据游戏难度调整在低生命值/饱食度时的负面效果 (需要 'difficultyScaling' 设置为 true) [vanilla: false] [default: true]
     B:difficultyScalingEffects=false
 
-    # Healing rate scales by difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
+    # 根据游戏难度调整生命恢复速率 (需要 'difficultyScaling' 设置为 true) [vanilla: false] [default: true]
     B:difficultyScalingHealing=false
 
-    # Hunger loss rate scales by difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
+    # 根据游戏难度调整饱食度降低速率 (需要 'difficultyScaling' 设置为 true) [vanilla: false] [default: true]
     B:difficultyScalingHunger=false
 
-    # Hunger value after respawn is affected by difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
+    # 根据游戏难度调整重生之后的饱食度 (需要 'difficultyScaling' 设置为 true) [vanilla: false] [default: true]
     B:difficultyScalingRespawnHunger=false
 }
 
