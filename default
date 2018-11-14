@@ -40,58 +40,58 @@
 ##########################################################################################################
 
 delays {
-    # 实体进行繁殖的周期时间倍数 [一般值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    # 实体繁殖时所需的周期时间倍率 [一般值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
     I:breedingTimeoutMultiplier=1
 
-    # 仙人掌生长周期时间倍数 [一般值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    # 仙人掌生长周期时间倍率 [一般值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
     I:cactusRegrowthMultiplier=1
 
-    # 小孩成年的周期时间倍数 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
+    # 小孩成年所需的周期时间倍率 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
     I:childDurationMultiplier=1
 
-    # 可可豆生长周期时间倍数 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
+    # 可可豆生长所需的周期时间倍率 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
     I:cocoaRegrowthMultiplier=1
 
-    # 非木本的植物生长的周期时间倍数 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
+    # 非木本的植物生长所需的周期时间倍率 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
     I:cropRegrowthMultiplier=1
 
-    # 将食物放在匠魂模组（Tinkers' Construct）中晾干架上晾干所需的周期时间倍数 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
+    # 将食物放在匠魂模组（Tinkers' Construct）中晾干架上晾干所需的周期时间倍率 [一般值: 1] [range: 0 ~ 2147483647, default: 4]
     I:dryingRackTimeMultiplier=1
 
-    # 鸡产蛋的周期时间倍数 [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # 鸡产蛋的周期时间倍率 [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
     I:eggTimeoutMultiplier=1
 
-    # 在更多花朵模组 (WeeeFlower) 中植物的生长周期时间倍数 [vanilla: 1] [range: 0 ~ 2147483647, default: 1]
+    # 在更多花朵模组 (WeeeFlower) 中植物生长所需的周期时间倍率 [vanilla: 1] [range: 0 ~ 2147483647, default: 1]
     I:flowerRegrowthMultiplier=1
 
-    # Delay (in minutes) 牛挤过奶后能再挤奶之前相隔的时间周期（单位为分钟） [vanilla: 0] [range: 0 ~ 2147483647, default: 20]
+    # 牛挤过奶后能再挤奶之前所需相隔的周期时间倍率（单位为分钟） [vanilla: 0] [range: 0 ~ 2147483647, default: 20]
     I:milkedTimeout=0
 
-    # Multiplier on the time it takes nether wart to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # 下界树瘤生长所需的周期时间倍率 [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
     I:netherWartRegrowthMultiplier=1
 
-    # Multipier on crop growth time without sunlight (1 to disable feature, 0 to make crops only grow in sunlight) [vanilla: 1] [range: 0 ~ 2147483647, default: 2]
+    # 无阳光下植物的生长的周期时间倍率 (1 to disable feature, 0 to make crops only grow in sunlight) [vanilla: 1] [range: 0 ~ 2147483647, default: 2]
     I:noSunlightRegrowthMultiplier=1
 
-    # Multiplier on the time it takes a sapling to grow into a tree [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # 树苗长成树所需的生长周期时间倍率 [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
     I:saplingRegrowthMultiplier=0
 
-    # Multiplier on the time it takes sugarcane to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # 甘蔗生长所需的周期时间倍率 [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
     I:sugarcaneRegrowthMultiplier=1
 
-    # Multiplier on the time it takes a tree crop to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
+    # 耕地上的木本植物生长所需的周期时间倍率 [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
     I:treeCropRegrowthMultiplier=1
 
-    # Multipier on crop growth time (except sugarcane) in the wrong biome (1 to disable feature, 0 to make crops only grow in correct biome) [vanilla: 1] [range: 0 ~ 2147483647, default: 2]
+    # 农作物在错误的生物群系中所需的生长周期时间倍率（甘蔗除外）（设置 1 禁用此选项，设置 0 会使得植物只会在正确的生物群系中才会生长）[vanilla: 1] [range: 0 ~ 2147483647, default: 2]
     I:wrongBiomeRegrowthMultiplier=1
 
-    # Multipier on sugarcane growth time in the wrong biome (1 to disable feature, 0 to make sugarcane only grow in correct biome) [vanilla: 1] [range: 0 ~ 2147483647, default: 2]
+    # 甘蔗在错误的生物群系中所需的生长周期时间倍率（设置 1 禁用此选项，设置 0 会使得植物只会在正确的生物群系中才会生长）[vanilla: 1] [range: 0 ~ 2147483647, default: 2]
     I:wrongBiomeRegrowthMultiplierSugarcane=1
 }
 
 
 ##########################################################################################################
-# difficulty scaling
+# 难度等级
 #--------------------------------------------------------------------------------------------------------#
 # Options to scale the difficulty of certain elements based on game difficulty
 ##########################################################################################################
