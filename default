@@ -192,30 +192,30 @@ food {
 ##########################################################################################################
 # harvestcraft
 #--------------------------------------------------------------------------------------------------------#
-# Options related to HarvestCraft.
-# §cOnly works if HarvestCraft is installed!
+# 与 HarvestCraft 相关的选项.
+# (红色)只在 HarvestCraft 安装时有效!
 ##########################################################################################################
 
 harvestcraft {
-    # Add HarvestCraft crop produce to the items farmer villagers will buy (HarvestCraft) [vanilla: false] [default: true]
+    # 将 HarvestCraft 的作物添加到农民村民收购的物品中 (HarvestCraft) [vanilla: false] [default: true]
     B:addCropTradesFarmer=false
 
-    # HarvestCraft items added to dungeon/temple chests (Harvestcraft) [vanilla: false] [default: true]
+    # 将 HarvestCraft 物品添加到地牢与神庙的奖励箱中 (Harvestcraft) [vanilla: false] [default: true]
     B:addHarvestCraftChestLoot=false
 
-    # Add HarvestCraft saplings to the items farmer villagers will sell (HarvestCraft) [vanilla: false] [default: true]
+    # 将 HarvestCraft 树苗添加到农民村民出售的物品中 (HarvestCraft) [vanilla: false] [default: true]
     B:addSaplingTradesFarmer=false
 
-    # Add high tier HarvestCraft foods to the items butcher villagers will sell (HarvestCraft) [vanilla: false] [default: true]
+    # 讲高级的 HarvestCraft 食物添加到突发村民会出售的物品中 (HarvestCraft) [vanilla: false] [default: true]
     B:addTradesButcher=false
 
-    # Weighted chance for food to be found in chests (addHarvestCraftChestLoot must be true) [vanilla: 5] [range: 1 ~ 2147483647, default: 5]
+    # 修改在奖励箱中发现食物的权重 (addHarvestCraftChestLoot must be true) [vanilla: 5] [range: 1 ~ 2147483647, default: 5]
     I:chestLootChance=5
 
-    # Max stack size for food to be found in chests (addHarvestCraftChestLoot must be true) [vanilla: 64] [range: 1 ~ 2147483647, default: 16]
+    # 在奖励箱中发现的食物的每个堆的最大数量 (addHarvestCraftChestLoot must be true) [vanilla: 64] [range: 1 ~ 2147483647, default: 16]
     I:chestLootMaxStackSize=64
 
-    # Makes HarvestCraft foods unplantable, meaning seeds are required to plant crops [vanilla: false] [default: true]
+    # 使 HarvestCraft 食物本身无法种植，代表需要种子才能种植作物 [vanilla: false] [default: true]
     B:foodsUnplantable=false
 }
 
