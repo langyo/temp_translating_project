@@ -162,29 +162,29 @@ food {
 ##########################################################################################################
 # getting seeds
 #--------------------------------------------------------------------------------------------------------#
-# Options for obtaining seeds
+# 获得种子相关的设置
 ##########################################################################################################
 
 "getting seeds" {
-    # Adds a crafting recipe to turn 1 wheat into 1 seed [vanilla: false] [default: true]
+    # 添加一个合成表，可以使用一个小麦合成一个种子 [vanilla: false] [default: true]
     B:addSeedsCraftingRecipe=false
 
-    # Each seed has an equal chance to drop (grass drops and via hoes) [vanilla: false] [default: true]
+    # 每种种子拥有相同的掉落率（草掉落或者通过锄） [vanilla: false] [default: true]
     B:allSeedsEqual=false
 
-    # Multiplier on tool damage taken when a hoe is used ('modifyHoeUse' must be true) [vanilla: 1] [range: 1 ~ 2147483647, default: 5]
+    # 使用锄时工具耐久消耗的倍率 (需要 'modifyHoeUse' 为 true) [vanilla: 1] [range: 1 ~ 2147483647, default: 5]
     I:hoeToolDamageMultiplier=1
 
-    # Changes the use of hoes depending on the availability of water [vanilla: false] [default: true]
+    # 根据是否靠近水源，更改锄的使用方式 [vanilla: false] [default: true]
     B:modifyHoeUse=false
 
-    # Whether wood and stone hoe recipes are removed [vanilla: false] [default: true]
+    # 是否移除木锄与石锄的合成 [vanilla: false] [default: true]
     B:removeHoeRecipes=false
 
-    # Removes seed drops when breaking tall grass [vanilla: false] [default: true]
+    # 移除破坏草丛时的种子掉落 [vanilla: false] [default: true]
     B:removeTallGrassSeeds=false
 
-    # Percent chance for seed to drop from hoe use on normal difficulty ('modifyHoeUse' must be true) [vanilla: 20] [range: 0 ~ 100, default: 20]
+    # 在普通难度下使用锄获得种子的概率 (需要 'modifyHoeUse' 为 true) [vanilla: 20] [range: 0 ~ 100, default: 20]
     I:seedChance=20
 }
 
