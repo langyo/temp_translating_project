@@ -223,23 +223,23 @@ harvestcraft {
 ##########################################################################################################
 # harvesting
 #--------------------------------------------------------------------------------------------------------#
-# Options related to drops from crops
+# 与作物掉落相关的选项
 ##########################################################################################################
 
 harvesting {
-    # Enables/disables modification of the item drops of crops (produce and seeds) [vanilla: false] [default: true]
+    # 是否开启修改作物掉落物品的功能 (产物与种子) [vanilla: false] [default: true]
     B:modifyCropDrops=false
 
-    # Maximum number of produce you get when harvesting a non-tree crop (modifyCropDrops must be true) [vanilla: 4] [range: 0 ~ 2147483647, default: 4]
+    # 你从一个不是树的作物收获的产物的最大数量 (需要 modifyCropDrops 为 true) [vanilla: 4] [range: 0 ~ 2147483647, default: 4]
     I:producePerHarvestMax=4
 
-    # Minimum number of produce you get when harvesting a non-tree crop (modifyCropDrops must be true) [vanilla: 2] [range: 0 ~ 2147483647, default: 2]
+    # 你从一个不是树的作物收获的产物的最小数量 (需要 modifyCropDrops 为 true) [vanilla: 2] [range: 0 ~ 2147483647, default: 2]
     I:producePerHarvestMin=2
 
-    # Maximum number of seeds you get when harvesting a non-tree crop (modifyCropDrops must be true) [vanilla: 0] [range: 0 ~ 2147483647, default: 0]
+    # 你从一个不是树的作物收获的种子的最大数量 (需要 modifyCropDrops 为 true) [vanilla: 0] [range: 0 ~ 2147483647, default: 0]
     I:seedsPerHarvestMax=0
 
-    # Minimum number of seeds you get when harvesting a non-tree crop (modifyCropDrops must be true) [vanilla: 0] [range: 0 ~ 2147483647, default: 0]
+    # 你从一个不是树的作物收获的种子的最小数量  (需要 modifyCropDrops 为 true) [vanilla: 0] [range: 0 ~ 2147483647, default: 0]
     I:seedsPerHarvestMin=0
 }
 
