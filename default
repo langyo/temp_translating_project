@@ -104,16 +104,16 @@ delays {
     # 基于游戏难度调整骨粉的效果 (需要 'difficultyScaling' 设置为 true) [vanilla: false] [default: true]
     B:difficultyScalingBoneMeal=false
 
-    # 根据游戏难度调整在低生命值/饱食度时的负面效果 (需要 'difficultyScaling' 设置为 true) [vanilla: false] [default: true]
+    # 根据游戏难度调整在低生命值/饥饿值时的负面效果 (需要 'difficultyScaling' 设置为 true) [vanilla: false] [default: true]
     B:difficultyScalingEffects=false
 
     # 根据游戏难度调整生命恢复速率 (需要 'difficultyScaling' 设置为 true) [vanilla: false] [default: true]
     B:difficultyScalingHealing=false
 
-    # 根据游戏难度调整饱食度降低速率 (需要 'difficultyScaling' 设置为 true) [vanilla: false] [default: true]
+    # 根据游戏难度调整饥饿值降低速率 (需要 'difficultyScaling' 设置为 true) [vanilla: false] [default: true]
     B:difficultyScalingHunger=false
 
-    # 根据游戏难度调整重生之后的饱食度 (需要 'difficultyScaling' 设置为 true) [vanilla: false] [default: true]
+    # 根据游戏难度调整重生之后的饥饿值 (需要 'difficultyScaling' 设置为 true) [vanilla: false] [default: true]
     B:difficultyScalingRespawnHunger=false
 }
 
@@ -121,40 +121,40 @@ delays {
 ##########################################################################################################
 # food
 #--------------------------------------------------------------------------------------------------------#
-# Food related options
+# 食物相关设置
 ##########################################################################################################
 
 food {
-    # Add tooltips to food items showing hints at food value [vanilla: false] [default: true]
+    # 在食物物品的ToolTips上显示数值信息 [vanilla: false] [default: true]
     B:addFoodTooltips=false
 
-    # Adds a 'well fed' effect that gives slight health regen [vanilla: false] [default: true]
+    # 添加'well fed'效果，给予短暂的生命回复 [vanilla: false] [default: true]
     B:addWellFedEffect=false
 
-    # Food values not manually set (see 'useHOFoodValues') will have their hunger value divided by this ('modifyFoodValues' must be true) [vanilla: 1.0] [range: -3.4028235E38 ~ 3.4028235E38, default: 4.0]
+    # 没有人工设定数值值的食物 (详见 'useHOFoodValues') 的饥饿值为原本的值除以此设置 (需要'modifyFoodValues' 为 true) [vanilla: 1.0] [range: -3.4028235E38 ~ 3.4028235E38, default: 4.0]
     S:foodHungerDivider=1.0
 
-    # Food values not manually set (see 'useHOFoodValues') will have their saturation modifier set to <modified hunger> divided by this ('modifyFoodValues' must be true)
-    # Set to 0 to disable [vanilla: 0.0] [range: -3.4028235E38 ~ 3.4028235E38, default: 20.0]
+    # 没有人工设定数值值的食物 (详见 'useHOFoodValues') 的饱和度为 <调整之后饥饿值> 除以此设置 (需要'modifyFoodValues' 为 true)
+    # 设置为0来禁用 [vanilla: 0.0] [range: -3.4028235E38 ~ 3.4028235E38, default: 20.0]
     S:foodHungerToSaturationDivider=0.0
 
-    # Food values not manually set (see 'useHOFoodValues') will have their saturation modifier divided by this ('modifyFoodValues' must be true)
-    # Note: Gets applied after 'foodHungerToSaturationDivider' [vanilla: 1.0] [range: -3.4028235E38 ~ 3.4028235E38, default: 1.0]
+    # 没有人工设定数值值的食物 (详见 'useHOFoodValues') 的饱和度会除以此设置 (需要'modifyFoodValues' 为 true)
+    # 注意: 这个设置在 'foodHungerToSaturationDivider' 之后应用 [vanilla: 1.0] [range: -3.4028235E38 ~ 3.4028235E38, default: 1.0]
     S:foodSaturationDivider=1.0
 
-    # Multiplier on the stack size of food ('modifyFoodStackSize' must be true) [vanilla: 1] [range: 1 ~ 2147483647, default: 1]
+    # 调整食物的最大堆叠（乘算） (需要 'modifyFoodStackSize' 为 true) [vanilla: 1] [range: 1 ~ 2147483647, default: 1]
     I:foodStackSizeMultiplier=1
 
-    # Changes the eating animation speed to be dependant on the food's replenishment value [vanilla: false] [default: true]
+    # 根据食物补充的数值调整进食动画速度 [vanilla: false] [default: true]
     B:modifyFoodEatingSpeed=false
 
-    # Changes the stack size of food to be dependant on the food's replenishment value [vanilla: false] [default: true]
+    # 根据食物补充的数值调整物品的最大堆叠数量 [vanilla: false] [default: true]
     B:modifyFoodStackSize=false
 
-    # Enables/disables all food value modification [vanilla: false] [default: true]
+    # 是否开启所有的食物值调整 [vanilla: false] [default: true]
     B:modifyFoodValues=false
 
-    # Enables/disables Hunger Overhaul manually setting the food values for supported mods ('modifyFoodValues' must be true) [vanilla: false] [default: true]
+    # 是否为支持的Mods使用Hunger Overhaul人工设置的食物值设定 (需要'modifyFoodValues' 为 true)[vanilla: false] [default: true]
     B:useHOFoodValues=false
 }
 
