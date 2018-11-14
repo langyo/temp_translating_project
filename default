@@ -342,19 +342,19 @@ hunger {
 ##########################################################################################################
 # natura
 #--------------------------------------------------------------------------------------------------------#
-# Options related to Natura.
-# §cOnly works if Natura is installed!
+# 与 Natura 相关的设置.
+# (红色)只在 Natura 安装时有效!
 ##########################################################################################################
 
 natura {
-    # Adds alternate recipes to turn barley/wheat into flour: 2x wheat/barley -> flour. [vanilla: false] [default: false]
+    # 添加将 小麦/大麦 合成为 面粉的替代合成表: 2x 小麦/大麦 -> 小麦粉/大麦粉. [vanilla: false] [default: false]
     B:addAlternateNaturaFlourCraftingRecipes=false
 
-    # Removes the default barley/wheat -> flour recipes.
-    # Note: These recipes are always removed if 'addSeedsCraftingRecipe' in 'getting seeds' is true because otherwise they'd conflict. [vanilla: false] [default: true]
+    # 移除默认的 大麦/小麦 -> 面粉 的合成表.
+    # 注意: 这些如果开启了 'getting seeds' 中的 'addSeedsCraftingRecipe' 这些合成就会被删除，因为冲突. [vanilla: false] [default: true]
     B:removeNaturaFlourCraftingRecipes=false
 
-    # Removes the default barley/wheat flour -> bread smelting recipes. [vanilla: false] [default: true]
+    # 移除默认的 大麦/小麦粉 烧制合成面包的合成. [vanilla: false] [default: true]
     B:removeNaturaFlourSmeltingRecipe=false
 }
 
