@@ -301,40 +301,40 @@ hunger {
 
 
 ##########################################################################################################
-# low stats
+# low stats  低状态
 #--------------------------------------------------------------------------------------------------------#
-# Options for how to handle when the player get low health/hunger
+# 当玩家出于低 生命值/饥饿值 如何处理的设置
 ##########################################################################################################
 
 "low stats" {
-    # Shows onscreen text when hunger/health is low [vanilla: false] [default: true]
+    # 当 生命值/饥饿值 低时 在屏幕上显示文字提示 [vanilla: false] [default: true]
     B:addGuiText=false
 
-    # Mining slowdown effect when health is low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
+    # 当低生命值时，附加挖掘疲劳效果 (需要 'addLowStatEffects' 为 true) [vanilla: false] [default: true]
     B:addLowHealthMiningSlowdown=false
 
-    # Nausea effect when health is really low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
+    # 当生命值非常低时，附加反胃效果 (需要 'addLowStatEffects' 为 true) [vanilla: false] [default: true]
     B:addLowHealthNausea=false
 
-    # Slowness effect when health is low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
+    # 当低生命值时，附加缓慢效果 (需要 'addLowStatEffects' 为 true) [vanilla: false] [default: true]
     B:addLowHealthSlowness=false
 
-    # Weakness effect when health is low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
+    # 当低生命值时，附加虚弱效果(需要 'addLowStatEffects' 为 true) [vanilla: false] [default: true]
     B:addLowHealthWeakness=false
 
-    # Mining slowdown effect when hunger is low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
+    # 当低饥饿值时，附加挖掘疲劳效果 (需要 'addLowStatEffects' 为 true) [vanilla: false] [default: true]
     B:addLowHungerMiningSlowdown=false
 
-    # Nausea effect when hunger is really low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
+    # 当饥饿值非常低时，附加反胃效果 (需要 'addLowStatEffects' 为 true) [vanilla: false] [default: true]
     B:addLowHungerNausea=false
 
-    # Slowness effect when hunger is low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
+    # 当低饥饿值时，附加缓慢效果 (需要 'addLowStatEffects' 为 true) [vanilla: false] [default: true]
     B:addLowHungerSlowness=false
 
-    # Weakness effect when hunger is low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
+    # 当低饥饿值时，附加虚弱效果 (需要 'addLowStatEffects' 为 true) [vanilla: false] [default: true]
     B:addLowHungerWeakness=false
 
-    # Enables/disables all low hunger/health effects [vanilla: false] [default: true]
+    # 是否开启低状态状态效果 [vanilla: false] [default: true]
     B:addLowStatEffects=false
 }
 
