@@ -100,27 +100,27 @@ delays {
     # 启用/禁用对所有难度等级的设置（这相当于一个总开关 —— 译者） [vanilla: false] [default: true]
     B:difficultyScaling=false
 
-    # Effects of bone meal dependant of difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
+    # 骨粉的作用效果是否取决于难度 ('difficultyScaling' 必须为 true) [vanilla: false] [default: true]
     B:difficultyScalingBoneMeal=false
 
-    # Negative effects on low health/hunger scale by difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
+    # 过低生命值/饥饿值导致的负面效果是否取决于难度 ('difficultyScaling' 必须为 true) [vanilla: false] [default: true]
     B:difficultyScalingEffects=false
 
-    # Healing rate scales by difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
+    # 治疗速度是否取决于难度 ('difficultyScaling' 必须为 true) [vanilla: false] [default: true]
     B:difficultyScalingHealing=false
 
-    # Hunger loss rate scales by difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
+    # 饥饿值损失速度是否取决于难度 ('difficultyScaling' 必须为 true) [vanilla: false] [default: true]
     B:difficultyScalingHunger=false
 
-    # Hunger value after respawn is affected by difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
+    # 重生后设置的饥饿值是否取决于难度 ('difficultyScaling' 必须为 true) [vanilla: false] [default: true]
     B:difficultyScalingRespawnHunger=false
 }
 
 
 ##########################################################################################################
-# food
+# 食物
 #--------------------------------------------------------------------------------------------------------#
-# Food related options
+# 与食物相关的设置
 ##########################################################################################################
 
 food {
