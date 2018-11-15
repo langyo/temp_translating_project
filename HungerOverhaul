@@ -1,11 +1,11 @@
-# Configuration file
+# 配置文件
 
 ##########################################################################################################
 #  
 #--------------------------------------------------------------------------------------------------------#
-# This config contains all of the default Hunger Overhaul settings.
-# It's intended to serve as an easy backup for returning to the defaults.
-# To use, rename this file to HungerOverhaul.cfg (overwriting your current HungerOverhaul.cfg)
+# 这个配置文件包含了所有用于禁用 Hunger Overhaul 所作更改的选项。
+# 这是一个可供给人们更改的起始文件，用于启用一些只想启用的东西，并保持其它设置不变。
+# 如果要使用，需要将文件名改为 HungerOverhaul.cfg (覆盖你之前的 HungerOverhaul.cfg)。
 ##########################################################################################################
 
 " " {
@@ -13,177 +13,178 @@
 
 
 ##########################################################################################################
-# custom field
+# 自定义农场
 #--------------------------------------------------------------------------------------------------------#
-# Options for enabling and manipulating a custom field in Villages
+# 在村庄中启用和操作自定义农场的选项
 ##########################################################################################################
 
 "custom field" {
-    # Adds a custom field to villages [vanilla: false] [default: true]
-    B:addCustomVillageField=true
+    # 是否要为村庄添加自定义农场 [原版默认值: false] [默认值: true]
+    B:addCustomVillageField=false
 
-    # Weighted chance for custom field to contain 'normal' crops [vanilla: 0] [range: 0 ~ 2147483647, default: 70]
-    I:fieldNormalWeight=70
+    # 自定义农场为'普通'农场的权重 [原版默认值: 0] [范围: 0 ~ 2147483647, 默认值: 70] 
+    # 如果安装harvestcraft则为随机harvestcraft作物，否则为随机原版（小麦，胡萝卜，土豆）作物
+    I:fieldNormalWeight=0
 
-    # Weighted chance for custom field to contain reeds [vanilla: 0] [range: 0 ~ 2147483647, default: 10]
-    I:fieldReedWeight=10
+    # 自定义农场为甘蔗农场的权重 [原版默认值: 0] [范围: 0 ~ 2147483647, 默认值: 10]
+    I:fieldReedWeight=0
 
-    # Weighted chance for custom field to contain pumpkins/melons [vanilla: 0] [range: 0 ~ 2147483647, default: 10]
-    I:fieldStemWeight=10
+    # 自定义农场为南瓜/西瓜农场的权重 [原版默认值: 0] [范围: 0 ~ 2147483647, 默认值: 10]
+    I:fieldStemWeight=0
 }
 
 
 ##########################################################################################################
-# delays
+# 延迟数据
 #--------------------------------------------------------------------------------------------------------#
-# Delays for various obtaining food related activities
+# 与各种获取食物相关的行为的延迟时间配置
 ##########################################################################################################
 
 delays {
-    # Multiplier applied to the delay between breeding entities [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
-    I:breedingTimeoutMultiplier=4
+    # 实体繁殖时所需的时间倍率 [原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    I:breedingTimeoutMultiplier=1
 
-    # Multiplier on the time it takes cactus to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
-    I:cactusRegrowthMultiplier=4
+    # 仙人掌生长时间倍率 [原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    I:cactusRegrowthMultiplier=1
 
-    # Multiplier applied to the delay before children become adults [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
-    I:childDurationMultiplier=4
+    # 幼崽成年所需的时间倍率 [原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    I:childDurationMultiplier=1
 
-    # Multiplier on the time it takes cocoa to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
-    I:cocoaRegrowthMultiplier=4
+    # 可可豆生长所需的时间倍率 [原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    I:cocoaRegrowthMultiplier=1
 
-    # Multiplier on the time it takes a non-tree crop to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
-    I:cropRegrowthMultiplier=4
+    # 作物生长所需的时间倍率 [原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    I:cropRegrowthMultiplier=1
 
-    # Multiplier on the time it takes food to dry on Tinkers' Construct drying racks [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
-    I:dryingRackTimeMultiplier=4
+    # 将食物放在匠魂模组（Tinkers' Construct）中晾干架上晾干所需的时间倍率 [原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    I:dryingRackTimeMultiplier=1
 
-    # Multiplier applied to the delay between chicken egg laying [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
-    I:eggTimeoutMultiplier=4
+    # 鸡产蛋的周期倍率 [原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    I:eggTimeoutMultiplier=1
 
-    # Multiplier on the time it takes a WeeeFlower crop to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 1]
+    # 在更多花朵模组 (WeeeFlower) 中植物生长所需的时间倍率 [原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 1]
     I:flowerRegrowthMultiplier=1
 
-    # Delay (in minutes) after milking a cow before it can be milked again [vanilla: 0] [range: 0 ~ 2147483647, default: 20]
-    I:milkedTimeout=20
+    # 牛挤过奶后能再挤奶之前所需相隔的时间（单位为分钟） [原版默认值: 0] [范围: 0 ~ 2147483647, 默认值: 20]
+    I:milkedTimeout=0
 
-    # Multiplier on the time it takes nether wart to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
-    I:netherWartRegrowthMultiplier=4
+    # 地狱疣生长所需的时间倍率 [原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    I:netherWartRegrowthMultiplier=1
 
-    # Multipier on crop growth time without sunlight (1 to disable feature, 0 to make crops only grow in sunlight) [vanilla: 1] [range: 0 ~ 2147483647, default: 2]
-    I:noSunlightRegrowthMultiplier=2
+    # 无阳光下植物的生长的时间倍率（设置 1 禁用此选项，设置 0 将会使植物只在阳光下生长） [原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 2]
+    I:noSunlightRegrowthMultiplier=1
 
-    # Multiplier on the time it takes a sapling to grow into a tree [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
-    I:saplingRegrowthMultiplier=1
+    # 树苗长成树所需的生长时间倍率 [原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    I:saplingRegrowthMultiplier=0
 
-    # Multiplier on the time it takes sugarcane to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
-    I:sugarcaneRegrowthMultiplier=4
+    # 甘蔗生长所需的时间倍率 [原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    I:sugarcaneRegrowthMultiplier=1
 
-    # Multiplier on the time it takes a tree crop to grow [vanilla: 1] [range: 0 ~ 2147483647, default: 4]
-    I:treeCropRegrowthMultiplier=4
+    # 水果生长所需的时间倍率（需要HarvestCraft） [原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 4]
+    I:treeCropRegrowthMultiplier=1
 
-    # Multipier on crop growth time (except sugarcane) in the wrong biome (1 to disable feature, 0 to make crops only grow in correct biome) [vanilla: 1] [range: 0 ~ 2147483647, default: 2]
-    I:wrongBiomeRegrowthMultiplier=2
+    # 农作物在错误的生物群系中所需的生长时间倍率（甘蔗除外）（设置 1 禁用此选项，设置 0 会使得植物只会在正确的生物群系中才会生长）[原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 2]
+    I:wrongBiomeRegrowthMultiplier=1
 
-    # Multipier on sugarcane growth time in the wrong biome (1 to disable feature, 0 to make sugarcane only grow in correct biome) [vanilla: 1] [range: 0 ~ 2147483647, default: 2]
-    I:wrongBiomeRegrowthMultiplierSugarcane=2
+    # 甘蔗在错误的生物群系中所需的生长周期时间倍率（设置 1 禁用此选项，设置 0 会使得植物只会在正确的生物群系中才会生长）[原版默认值: 1] [范围: 0 ~ 2147483647, 默认值: 2]
+    I:wrongBiomeRegrowthMultiplierSugarcane=1
 }
 
 
 ##########################################################################################################
-# difficulty scaling
+# 难度调整
 #--------------------------------------------------------------------------------------------------------#
-# Options to scale the difficulty of certain elements based on game difficulty
+# 基于游戏难度的难度调整的设置
 ##########################################################################################################
 
 "difficulty scaling" {
-    # Enable/Disable all difficulty scaling effect in one setting [vanilla: false] [default: true]
-    B:difficultyScaling=true
+    # 是否开启下列所有难度调整效果 [原版设置值: false] [默认值: true]
+    B:difficultyScaling=false
 
-    # Effects of bone meal dependant of difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
-    B:difficultyScalingBoneMeal=true
+    # 基于游戏难度调整骨粉的效果 (需要 'difficultyScaling' 设置为 true) [原版设置值: false] [默认值: true]
+    B:difficultyScalingBoneMeal=false
 
-    # Negative effects on low health/hunger scale by difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
-    B:difficultyScalingEffects=true
+    # 根据游戏难度调整在低生命值/饥饿值时的负面效果 (需要 'difficultyScaling' 设置为 true) [原版设置值: false] [默认值: true]
+    B:difficultyScalingEffects=false
 
-    # Healing rate scales by difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
-    B:difficultyScalingHealing=true
+    # 根据游戏难度调整生命恢复速率 (需要 'difficultyScaling' 设置为 true) [原版设置值: false] [默认值: true]
+    B:difficultyScalingHealing=false
 
-    # Hunger loss rate scales by difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
-    B:difficultyScalingHunger=true
+    # 根据游戏难度调整饥饿值降低速率 (需要 'difficultyScaling' 设置为 true) [原版设置值: false] [默认值: true]
+    B:difficultyScalingHunger=false
 
-    # Hunger value after respawn is affected by difficulty ('difficultyScaling' must be true) [vanilla: false] [default: true]
-    B:difficultyScalingRespawnHunger=true
+    # 根据游戏难度调整重生之后的饥饿值 (需要 'difficultyScaling' 设置为 true) [原版设置值: false] [默认值: true]
+    B:difficultyScalingRespawnHunger=false
 }
 
 
 ##########################################################################################################
 # food
 #--------------------------------------------------------------------------------------------------------#
-# Food related options
+# 与食物相关设置
 ##########################################################################################################
 
 food {
-    # Add tooltips to food items showing hints at food value [vanilla: false] [default: true]
-    B:addFoodTooltips=true
+    # 是否在食物的物品信息上显示食物相关数据 [原版设置值: false] [默认值: true]
+    B:addFoodTooltips=false
 
-    # Adds a 'well fed' effect that gives slight health regen [vanilla: false] [default: true]
-    B:addWellFedEffect=true
+    # 是否（为食物）添加饱和效果，给予短暂的生命回复 [原版设置值: false] [默认值: true]
+    B:addWellFedEffect=false
 
-    # Food values not manually set (see 'useHOFoodValues') will have their hunger value divided by this ('modifyFoodValues' must be true) [vanilla: 1.0] [range: -3.4028235E38 ~ 3.4028235E38, default: 4.0]
-    S:foodHungerDivider=4.0
+    # 未人工设置参数的食物 (详见 'useHOFoodValues') 的饥饿值，为原本的数值除以此设置 (需要'modifyFoodValues' 为 true) [原版设置值: 1.0] [range: -3.4028235E38 ~ 3.4028235E38, 默认值: 4.0]
+    S:foodHungerDivider=1.0
 
-    # Food values not manually set (see 'useHOFoodValues') will have their saturation modifier set to <modified hunger> divided by this ('modifyFoodValues' must be true)
-    # Set to 0 to disable [vanilla: 0.0] [range: -3.4028235E38 ~ 3.4028235E38, default: 20.0]
-    S:foodHungerToSaturationDivider=20.0
+    # 未人工设置参数的食物 (详见 'useHOFoodValues') 的饱和度为原本的数值除以此设置 (需要'modifyFoodValues' 为 true)
+    # 设置 0 来禁用 [原版设置值: 0.0] [range: -3.4028235E38 ~ 3.4028235E38, 默认值: 20.0]
+    S:foodHungerToSaturationDivider=0.0
 
-    # Food values not manually set (see 'useHOFoodValues') will have their saturation modifier divided by this ('modifyFoodValues' must be true)
-    # Note: Gets applied after 'foodHungerToSaturationDivider' [vanilla: 1.0] [range: -3.4028235E38 ~ 3.4028235E38, default: 1.0]
+    # 未人工设置参数的食物 (详见 'useHOFoodValues') 的饱和度会除以此设置 (需要'modifyFoodValues' 为 true)
+    # 注意: 这个设置需要先设置 'foodHungerToSaturationDivider' 之后才能使用 [原版设置值: 1.0] [range: -3.4028235E38 ~ 3.4028235E38, 默认值: 1.0]
     S:foodSaturationDivider=1.0
 
-    # Multiplier on the stack size of food ('modifyFoodStackSize' must be true) [vanilla: 1] [range: 1 ~ 2147483647, default: 1]
+    # 调整食物的最大堆叠倍率 (需要 'modifyFoodStackSize' 为 true) [原版设置值: 1] [range: 1 ~ 2147483647, 默认值: 1]
     I:foodStackSizeMultiplier=1
 
-    # Changes the eating animation speed to be dependant on the food's replenishment value [vanilla: false] [default: true]
-    B:modifyFoodEatingSpeed=true
+    # 是否根据食物补充的数值调整进食动画速度 [原版设置值: false] [默认值: true]
+    B:modifyFoodEatingSpeed=false
 
-    # Changes the stack size of food to be dependant on the food's replenishment value [vanilla: false] [default: true]
-    B:modifyFoodStackSize=true
+    # 是否根据食物补充的数值调整物品的最大堆叠数量 [原版设置值: false] [默认值: true]
+    B:modifyFoodStackSize=false
 
-    # Enables/disables all food value modification [vanilla: false] [default: true]
-    B:modifyFoodValues=true
+    # 是否开启所有的食物性能参数调整 [原版设置值: false] [默认值: true]
+    B:modifyFoodValues=false
 
-    # Enables/disables Hunger Overhaul manually setting the food values for supported mods ('modifyFoodValues' must be true) [vanilla: false] [default: true]
-    B:useHOFoodValues=true
+    # 是否为支持的模组启用 Hunger Overhaul人工设置的食物值设定 (需要'modifyFoodValues' 为 true)[原版设置值: false] [默认值: true]
+    B:useHOFoodValues=false
 }
 
 
 ##########################################################################################################
 # getting seeds
 #--------------------------------------------------------------------------------------------------------#
-# Options for obtaining seeds
+# 获得种子相关的设置
 ##########################################################################################################
 
 "getting seeds" {
-    # Adds a crafting recipe to turn 1 wheat into 1 seed [vanilla: false] [default: true]
-    B:addSeedsCraftingRecipe=true
+    # 是否添加可用一个小麦合成一个种子的合成表 [原版设置值: false] [默认值: true]
+    B:addSeedsCraftingRecipe=false
 
-    # Each seed has an equal chance to drop (grass drops and via hoes) [vanilla: false] [default: true]
-    B:allSeedsEqual=true
+    # 是否每种种子拥有相同的掉落率（草掉落或者通过锄） [原版设置值: false] [默认值: true]
+    B:allSeedsEqual=false
 
-    # Multiplier on tool damage taken when a hoe is used ('modifyHoeUse' must be true) [vanilla: 1] [range: 1 ~ 2147483647, default: 5]
-    I:hoeToolDamageMultiplier=5
+    # 使用锄头时消耗耐久的倍率 (需要 'modifyHoeUse' 为 true) [原版设置值: 1] [range: 1 ~ 2147483647, 默认值: 5]
+    I:hoeToolDamageMultiplier=1
 
-    # Changes the use of hoes depending on the availability of water [vanilla: false] [default: true]
-    B:modifyHoeUse=true
+    # 是否要根据是否靠近水源更改锄的使用方式 [原版设置值: false] [默认值: true]
+    B:modifyHoeUse=false
 
-    # Whether wood and stone hoe recipes are removed [vanilla: false] [default: true]
-    B:removeHoeRecipes=true
+    # 是否移除木锄与石锄的合成 [原版设置值: false] [默认值: true]
+    B:removeHoeRecipes=false
 
-    # Removes seed drops when breaking tall grass [vanilla: false] [default: true]
-    B:removeTallGrassSeeds=true
+    # 是否移除破坏草丛时的种子掉落 [原版设置值: false] [默认值: true]
+    B:removeTallGrassSeeds=false
 
-    # Percent chance for seed to drop from hoe use on normal difficulty ('modifyHoeUse' must be true) [vanilla: 20] [range: 0 ~ 100, default: 20]
+    # 在普通难度下使用锄获得种子的概率 (需要 'modifyHoeUse' 为 true) [原版设置值: 20] [range: 0 ~ 100, 默认值: 20]
     I:seedChance=20
 }
 
@@ -191,54 +192,54 @@ food {
 ##########################################################################################################
 # harvestcraft
 #--------------------------------------------------------------------------------------------------------#
-# Options related to HarvestCraft.
-# §cOnly works if HarvestCraft is installed!
+# 与 HarvestCraft 相关的选项.
+# (注意)只在 HarvestCraft 安装时有效!
 ##########################################################################################################
 
 harvestcraft {
-    # Add HarvestCraft crop produce to the items farmer villagers will buy (HarvestCraft) [vanilla: false] [default: true]
-    B:addCropTradesFarmer=true
+    # 将 HarvestCraft 的作物添加到农民村民收购的物品中 (HarvestCraft) [原版设置值: false] [默认值: true]
+    B:addCropTradesFarmer=false
 
-    # HarvestCraft items added to dungeon/temple chests (Harvestcraft) [vanilla: false] [default: true]
-    B:addHarvestCraftChestLoot=true
+    # 将 HarvestCraft 物品添加到地牢与神庙的奖励箱中 (Harvestcraft) [原版设置值: false] [默认值: true]
+    B:addHarvestCraftChestLoot=false
 
-    # Add HarvestCraft saplings to the items farmer villagers will sell (HarvestCraft) [vanilla: false] [default: true]
-    B:addSaplingTradesFarmer=true
+    # 将 HarvestCraft 树苗添加到农民村民出售的物品中 (HarvestCraft) [原版设置值: false] [默认值: true]
+    B:addSaplingTradesFarmer=false
 
-    # Add high tier HarvestCraft foods to the items butcher villagers will sell (HarvestCraft) [vanilla: false] [default: true]
-    B:addTradesButcher=true
+    # 讲高级的 HarvestCraft 食物添加到突发村民会出售的物品中 (HarvestCraft) [原版设置值: false] [默认值: true]
+    B:addTradesButcher=false
 
-    # Weighted chance for food to be found in chests (addHarvestCraftChestLoot must be true) [vanilla: 5] [range: 1 ~ 2147483647, default: 5]
+    # 修改在奖励箱中发现食物的权重 (addHarvestCraftChestLoot must be true) [原版设置值: 5] [range: 1 ~ 2147483647, 默认值: 5]
     I:chestLootChance=5
 
-    # Max stack size for food to be found in chests (addHarvestCraftChestLoot must be true) [vanilla: 64] [range: 1 ~ 2147483647, default: 16]
-    I:chestLootMaxStackSize=16
+    # 在奖励箱中发现的食物的每个堆的最大数量 (addHarvestCraftChestLoot must be true) [原版设置值: 64] [range: 1 ~ 2147483647, 默认值: 16]
+    I:chestLootMaxStackSize=64
 
-    # Makes HarvestCraft foods unplantable, meaning seeds are required to plant crops [vanilla: false] [default: true]
-    B:foodsUnplantable=true
+    # 使 HarvestCraft 食物本身无法种植，代表需要种子才能种植作物 [原版设置值: false] [默认值: true]
+    B:foodsUnplantable=false
 }
 
 
 ##########################################################################################################
 # harvesting
 #--------------------------------------------------------------------------------------------------------#
-# Options related to drops from crops
+# 与作物掉落相关的选项
 ##########################################################################################################
 
 harvesting {
-    # Enables/disables modification of the item drops of crops (produce and seeds) [vanilla: false] [default: true]
-    B:modifyCropDrops=true
+    # 是否开启修改作物掉落物品的功能 (产物与种子) [原版设置值: false] [默认值: true]
+    B:modifyCropDrops=false
 
-    # Maximum number of produce you get when harvesting a non-tree crop (modifyCropDrops must be true) [vanilla: 4] [range: 0 ~ 2147483647, default: 4]
+    # 你从一个非木本作物收获的产物的最大数量 (需要 modifyCropDrops 为 true) [原版设置值: 4] [range: 0 ~ 2147483647, 默认值: 4]
     I:producePerHarvestMax=4
 
-    # Minimum number of produce you get when harvesting a non-tree crop (modifyCropDrops must be true) [vanilla: 2] [range: 0 ~ 2147483647, default: 2]
+    # 你从一个非木本作物收获的产物的最小数量 (需要 modifyCropDrops 为 true) [原版设置值: 2] [range: 0 ~ 2147483647, 默认值: 2]
     I:producePerHarvestMin=2
 
-    # Maximum number of seeds you get when harvesting a non-tree crop (modifyCropDrops must be true) [vanilla: 0] [range: 0 ~ 2147483647, default: 0]
+    # 你从一个非木本作物收获的种子的最大数量 (需要 modifyCropDrops 为 true) [原版设置值: 0] [range: 0 ~ 2147483647, 默认值: 0]
     I:seedsPerHarvestMax=0
 
-    # Minimum number of seeds you get when harvesting a non-tree crop (modifyCropDrops must be true) [vanilla: 0] [range: 0 ~ 2147483647, default: 0]
+    # 你从一个非木本作物收获的种子的最小数量  (需要 modifyCropDrops 为 true) [原版设置值: 0] [range: 0 ~ 2147483647, 默认值: 0]
     I:seedsPerHarvestMin=0
 }
 
@@ -246,113 +247,114 @@ harvesting {
 ##########################################################################################################
 # health
 #--------------------------------------------------------------------------------------------------------#
-# Options related to health
+# 与生命值相关的选项
 ##########################################################################################################
 
 health {
-    # Amount of health food restores is the food value divided by this number (foodRegensHealth must be true) [vanilla: 4] [range: 0 ~ 2147483647, default: 4]
+    # 设置进食时恢复的生命值为食物的恢复的饥饿值除以此项数据 (需要 foodRegensHealth 为 true) [原版设置值: 4] [range: 0 ~ 2147483647, 默认值: 4]
     I:foodHealDivider=4
 
-    # Eating food regenerates health [vanilla: false] [default: false]
+    # 是否能通过进食恢复生命 [原版设置值: false] [默认值: false]
     B:foodRegensHealth=false
 
-    # Speed up or slow down the rate that health regenerates (0 to disable regen) [vanilla: 100] [range: 0 ~ 2147483647, default: 100]
+    # 加快或减慢生命恢复的速度 (设置 0 以禁用此选项) [原版设置值: 100] [range: 0 ~ 2147483647, 默认值: 100]
+    # 在 1.10+ 版本中此数值不起作用
     I:healthRegenRatePercentage=100
 
-    # The lower your health the longer it takes to regen, modify the effect here (lower = less effect) (modifyRegenRateOnLowHealth must be true) [vanilla: 5] [range: 0 ~ 2147483647, default: 5]
+    # 你的生命值越低，恢复需要的时间越长, 而此效果可以在这里调整 (数值越低，影响效果越小) (需要 modifyRegenRateOnLowHealth 为 true) [原版设置值: 5] [range: 0 ~ 2147483647, 默认值: 5]
     I:lowHealthRegenRateModifier=5
 
-    # Minimum hunger level before healing starts [vanilla: 18] [range: 0 ~ 2147483647, default: 7]
-    I:minHungerToHeal=7
+    # 能够开始恢复生命所需的最低的饥饿值 [原版设置值: 18] [range: 0 ~ 2147483647, 默认值: 7]
+    I:minHungerToHeal=18
 
-    # The lower your health the longer it takes to regen [vanilla: false] [default: true]
-    B:modifyRegenRateOnLowHealth=true
+    # 是否设定生命值越低，恢复所需时间越长 [原版设置值: false] [默认值: true]
+    B:modifyRegenRateOnLowHealth=false
 }
 
 
 ##########################################################################################################
 # hunger
 #--------------------------------------------------------------------------------------------------------#
-# Options related to hunger
+# 与饥饿值相关的设置
 ##########################################################################################################
 
 hunger {
-    # You lose hunger (very slowly) at all times [vanilla: false] [default: true]
-    B:constantHungerLoss=true
+    # 你会一直流失饥饿值（非常缓慢） [原版设置值: false] [默认值: true]
+    B:constantHungerLoss=false
 
-    # Amount of damage you take when hunger hits zero [vanilla: 2] [range: -2147483648 ~ 2147483647, default: 200]
-    I:damageOnStarve=200
+    # 当饥饿值Amount of damage you take when hunger hits zero [原版设置值: 2] [range: -2147483648 ~ 2147483647, 默认值: 200]
+    I:damageOnStarve=2
 
-    # Disable the hunger drain when healing that was introduced in vanilla 1.6.2 [vanilla: false] [default: true]
-    B:disableHealingHungerDrain=true
+    # 关闭恢复生命时的饥饿值下降（原版1.6.2添加） [原版设置值: false] [默认值: true]
+    B:disableHealingHungerDrain=false
 
-    # Speed up or slow down the rate that hunger drops (set to 0 to disable hunger loss) [vanilla: 100.0] [range: 0.0 ~ 3.4028235E38, default: 133.33334]
-    S:hungerLossRatePercentage=133.33334350585938
+    # 加快或减慢饥饿值下降的速率 (设置为0会关闭饥饿值下降) [原版设置值: 100.0] [range: 0.0 ~ 3.4028235E38, 默认值: 133.33334]
+    S:hungerLossRatePercentage=100.0
 
-    # The amount difficulty modifies the hunger value set after respawning  ('difficultyScaling' and 'difficultyScalingRespawnHunger' must be true) [vanilla: 4] [range: 0 ~ 2147483647, default: 4]
+    # 重生之后饥饿值根据难度调整的倍率 (需要'difficultyScaling' 和 'difficultyScalingRespawnHunger' 为 true) [原版设置值: 4] [range: 0 ~ 2147483647, 默认值: 4]
+    # 普通 = 和平重生值 - 此设置 ，困难 = 和平重生值 - 2 * 此设置
     I:respawnHungerDifficultyModifier=4
 
-    # hunger value set after respawning for peaceful/easy difficulty [vanilla: 20] [range: 0 ~ 2147483647, default: 20]
+    # 在和平/简单难度下重生之后的饥饿值 [原版设置值: 20] [range: 0 ~ 2147483647, 默认值: 20]
     I:respawnHungerValue=20
 }
 
 
 ##########################################################################################################
-# low stats
+# low stats  低状态
 #--------------------------------------------------------------------------------------------------------#
-# Options for how to handle when the player get low health/hunger
+# 当玩家出于低 生命值/饥饿值 如何处理的设置
 ##########################################################################################################
 
 "low stats" {
-    # Shows onscreen text when hunger/health is low [vanilla: false] [default: true]
-    B:addGuiText=true
+    # 当 生命值/饥饿值 低时 在屏幕上显示文字提示 [原版设置值: false] [默认值: true]
+    B:addGuiText=false
 
-    # Mining slowdown effect when health is low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
-    B:addLowHealthMiningSlowdown=true
+    # 当低生命值时，附加挖掘疲劳效果 (需要 'addLowStatEffects' 为 true) [原版设置值: false] [默认值: true]
+    B:addLowHealthMiningSlowdown=false
 
-    # Nausea effect when health is really low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
-    B:addLowHealthNausea=true
+    # 当生命值过低时，附加反胃效果 (需要 'addLowStatEffects' 为 true) [原版设置值: false] [默认值: true]
+    B:addLowHealthNausea=false
 
-    # Slowness effect when health is low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
-    B:addLowHealthSlowness=true
+    # 当生命值过低时，附加缓慢效果 (需要 'addLowStatEffects' 为 true) [原版设置值: false] [默认值: true]
+    B:addLowHealthSlowness=false
 
-    # Weakness effect when health is low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
-    B:addLowHealthWeakness=true
+    # 当生命值过低时，附加虚弱效果(需要 'addLowStatEffects' 为 true) [原版设置值: false] [默认值: true]
+    B:addLowHealthWeakness=false
 
-    # Mining slowdown effect when hunger is low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
-    B:addLowHungerMiningSlowdown=true
+    # 当饥饿值过低时，附加挖掘疲劳效果 (需要 'addLowStatEffects' 为 true) [原版设置值: false] [默认值: true]
+    B:addLowHungerMiningSlowdown=false
 
-    # Nausea effect when hunger is really low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
-    B:addLowHungerNausea=true
+    # 当饥饿值过低时，附加反胃效果 (需要 'addLowStatEffects' 为 true) [原版设置值: false] [默认值: true]
+    B:addLowHungerNausea=false
 
-    # Slowness effect when hunger is low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
-    B:addLowHungerSlowness=true
+    # 当饥饿值过低时，附加缓慢效果 (需要 'addLowStatEffects' 为 true) [原版设置值: false] [默认值: true]
+    B:addLowHungerSlowness=false
 
-    # Weakness effect when hunger is low ('addLowStatEffects' must be true) [vanilla: false] [default: true]
-    B:addLowHungerWeakness=true
+    # 当饥饿值过低时，附加虚弱效果 (需要 'addLowStatEffects' 为 true) [原版设置值: false] [默认值: true]
+    B:addLowHungerWeakness=false
 
-    # Enables/disables all low hunger/health effects [vanilla: false] [default: true]
-    B:addLowStatEffects=true
+    # 是否开启过低生命值/饥饿值的状态效果 [原版设置值: false] [默认值: true]
+    B:addLowStatEffects=false
 }
 
 
 ##########################################################################################################
 # natura
 #--------------------------------------------------------------------------------------------------------#
-# Options related to Natura.
-# §cOnly works if Natura is installed!
+# 与模组 Natura 相关的设置.
+# （注意）只在 Natura 安装时有效!
 ##########################################################################################################
 
 natura {
-    # Adds alternate recipes to turn barley/wheat into flour: 2x wheat/barley -> flour. [vanilla: false] [default: false]
+    # 是否添加将 小麦/大麦 合成为 面粉的替代合成表: 2x 小麦/大麦 -> 小麦粉/大麦粉. [原版设置值: false] [默认值: false]
     B:addAlternateNaturaFlourCraftingRecipes=false
 
-    # Removes the default barley/wheat -> flour recipes.
-    # Note: These recipes are always removed if 'addSeedsCraftingRecipe' in 'getting seeds' is true because otherwise they'd conflict. [vanilla: false] [default: true]
-    B:removeNaturaFlourCraftingRecipes=true
+    # 是否移除默认的 大麦/小麦 -> 面粉 合成.
+    # 注意: 这些如果开启了 'getting seeds' 中的 'addSeedsCraftingRecipe' 这些合成就会被删除，因为冲突. [原版设置值: false] [默认值: true]
+    B:removeNaturaFlourCraftingRecipes=false
 
-    # Removes the default barley/wheat flour -> bread smelting recipes. [vanilla: false] [default: true]
-    B:removeNaturaFlourSmeltingRecipe=true
+    # 是否移除默认的 大麦/小麦粉 熔炼（放在熔炉里）面包的合成. [原版设置值: false] [默认值: true]
+    B:removeNaturaFlourSmeltingRecipe=false
 }
-
 
